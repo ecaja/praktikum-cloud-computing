@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cloud Computing | Web on Cloud</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #10233f;
+      background: linear-gradient(135deg, #eef7ff, #f8fbff);
+      min-height: 100vh;
+    }
+    header {
+      padding: 22px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #ffffff;
+      border-bottom: 1px solid #dce8f5;
+    }
+    .brand { font-weight: 800; color: #1464c0; letter-spacing: .3px; }
+    nav a { color: #30445e; text-decoration: none; margin-left: 22px; font-size: 14px; }
+    main {
+      max-width: 1050px;
+      margin: 0 auto;
+      padding: 76px 24px 60px;
+      display: grid;
+      grid-template-columns: 1.25fr .75fr;
+      gap: 36px;
+      align-items: center;
+    }
+    .tag {
+      display: inline-block;
+      background: #dceeff;
+      color: #1464c0;
+      border-radius: 999px;
+      padding: 8px 13px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: .7px;
+    }
+    h1 { font-size: clamp(38px, 5vw, 60px); line-height: 1.06; margin: 20px 0; }
+    p { color: #52647c; font-size: 17px; line-height: 1.7; }
+    .button {
+      display: inline-block;
+      margin-top: 15px;
+      background: #1769d2;
+      color: white;
+      padding: 13px 20px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 700;
+    }
+    .panel {
+      background: white;
+      border: 1px solid #dce8f5;
+      border-radius: 22px;
+      padding: 30px;
+      box-shadow: 0 18px 50px rgba(25, 78, 130, .10);
+    }
+    .cloud { font-size: 74px; text-align: center; margin: 5px 0 20px; }
+    .panel h2 { margin: 0 0 12px; font-size: 22px; }
+    .panel p { font-size: 15px; margin-bottom: 0; }
+    .features {
+      max-width: 1000px;
+      margin: 0 auto 60px;
+      padding: 0 24px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+    .feature {
+      background: white;
+      border: 1px solid #dce8f5;
+      border-radius: 16px;
+      padding: 22px;
+    }
+    .feature h3 { margin: 8px 0; }
+    .feature p { font-size: 14px; margin: 0; }
+    footer { text-align: center; padding: 24px; color: #718096; font-size: 13px; }
+    @media (max-width: 700px) {
+      header { padding: 18px 5%; }
+      nav { display: none; }
+      main { grid-template-columns: 1fr; padding-top: 48px; }
+      .features { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">☁ CLOUDLAB</div>
+    <nav><a href="#tentang">Tentang</a><a href="#fitur">Fitur</a></nav>
+  </header>
+
+  <main id="tentang">
+    <section>
+      <span class="tag">PRAKTIKUM CLOUD COMPUTING</span>
+      <h1>Website sederhana,<br>siap di cloud.</h1>
+      <p>Ini adalah contoh website statis untuk latihan deployment menggunakan GitHub dan Vercel. Setelah diunggah, website dapat diakses secara online melalui sebuah URL.</p>
+      <a class="button" href="#fitur">Jelajahi Website →</a>
+    </section>
+    <aside class="panel">
+      <div class="cloud">☁️</div>
+      <h2>Web Server on Cloud</h2>
+      <p>Deploy website statis dengan menghubungkan repository GitHub ke Vercel.</p>
+    </aside>
+  </main>
+
+  <section class="features" id="fitur">
+    <article class="feature">
+      <div>📁</div>
+      <h3>GitHub Repository</h3>
+      <p>Menyimpan file website dan riwayat perubahan kode.</p>
+    </article>
+    <article class="feature">
+      <div>🚀</div>
+      <h3>Deployment</h3>
+      <p>Mempublikasikan website agar dapat diakses melalui internet.</p>
+    </article>
+    <article class="feature">
+      <div>🔄</div>
+      <h3>Continuous Deployment</h3>
+      <p>Perubahan yang di-commit ke GitHub dapat memicu deployment baru secara otomatis.</p>
+    </article>
+  </section>
+
+  <footer>Praktikum Cloud Computing · Web Server on Cloud</footer>
+</body>
+</html>
